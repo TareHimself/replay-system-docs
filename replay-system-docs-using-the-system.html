@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using the system</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="replay-system-favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/c84649a909.js" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="plugins/prism/prism.css">
+    <link rel="stylesheet" href="plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/styles-docs.css">
+    
+</head> 
+
+<body class="body-green" id="top">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span class="text-highlight">ReplaySystem Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Using The System</li>
+                </ol>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Using The System</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Mar 30th, 2021</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="installation-step1"  class="section-block">
+                                    <h3 class="block-title">Step One</h3>
+                                    <p>Navigate to your library
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/installation-step1.png" alt="step1">
+                                </div><!--//section-block-->
+                                <div id="installation-step2"  class="section-block">
+                                    <h3 class="block-title">Step Two</h3>
+                                    <p>Search your vault for the Replay System plugin
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/installation-step2.png" alt="step1">
+                                </div><!--//section-block-->
+                                <div id="installation-step3"  class="section-block">
+                                    <h3 class="block-title">Step Three</h3>
+                                    <p>Click on "Install to Engine" then select 4.26 and click "Install".
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/installation-step3.png" alt="step3">
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            
+                            <section id="project-setup-section" class="doc-section">
+                                <h2 class="section-title">Project Setup</h2>
+                                <div id="project-step1" class="section-block">
+                                    <h3 class="block-title">Step One</h3>
+                                    <p>Click on "Edit" in the top left and select "Plugins".
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/project-setup-step1.png" alt="step1">
+                                </div><!--//section-block-->
+                                <div id="project-step2" class="section-block">
+                                    <h3 class="block-title">Step Two</h3>
+                                    <p>In the "Plugins" window select "Replay" under "Installed".
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/project-setup-step2.png" alt="step2">
+                                </div><!--//section-block-->
+                                <div id="project-step3" class="section-block">
+                                    <h3 class="block-title">Step Three</h3>
+                                    <p>Tick "Enabled" if it isn't ticked and follow the prompt to restart your project (if it wasn't ticked).
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/project-setup-step3.png" alt="step3">
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="recording-replays-section" class="doc-section">
+                                <h2 class="section-title">Recording Replays</h2>
+                                <div id="recording-a-replay" class="section-block">
+                                    <h3 class="block-title">Recording a Replay</h3>
+                                    <p>In any blueprint class right click and search for "Record".<br/>
+                                        Select the first option under "Recording".
+                                    </p>  
+
+                                    <img class="img-fluid" src="images/docs/recording-a-replay1.png" alt="recording-a-replay1">
+
+                                    <p>
+                                        <br/><br/>You should now have the node below in your graph.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/recording-a-replay2.png" alt="recording-a-replay2">
+
+                                    <p>
+                                        <br/><br/>You can set "Replay Friendly Name" to whatever you want but keep "Replay Name" technical because that is the name replay will be saved as on disk.<br/>
+                                        As shown below.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/recording-a-replay3.png" alt="recording-a-replay3">
+
+                                    <p>
+                                        <br/><br/>Now once you execute this node (i.e. connect it to something) you will start recording a replay.
+                                    </p>
+
+
+                                </div><!--//section-block-->
+                                <div id="adding-events" class="section-block">
+                                    <h3 class="block-title">Adding Events</h3>
+                                    <p>We can add an event to a replay once we start the recording.<br/>
+                                        We're going to add an event to the replay when the "left mouse button" is clicked
+                                    </p>
+
+                                    <p><br/><br/>First drag of from the right click on the graph and search for "left mouse button" and select the first thing under "Mouse Events".<br/>
+                                        This event will be called every time we press the "left mouse button".</p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events1.gif" alt="adding-events1">
+
+                                    <p>
+                                        <br/><br/>
+                                        Now we're going to need the node that actually adds the event.<br/>
+                                        Right click on the graph and search for "Add Event To Active" and select the first node under "Replay System".<br/>
+                                        Now connect that node to our event from earlier.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events2.gif" alt="adding-events2">
+
+                                    <p>
+                                        <br/><br/>Next were going to name the event Mouse Click and set the group to Clicks
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events3.png" alt="adding-events3">
+
+                                    <p>
+                                        <br/><br/>Because each event has to have a different name we're going to add the current game time to the event name.<br/><br/>
+                                        Right click in the event graph and search for "Get game Time In Seconds".
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events4.gif" alt="adding-events4">
+
+                                    <p>
+                                        <br/><br/>We're going to append the game time to our event name so every time we click the event name will be different.(if its the same it updates instead of adding a new one)<br/><br/>
+                                        First convert the game time to string then append it to "Mouse Click" and use that to set the event name.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events5.gif" alt="adding-events5">
+
+                                    <p>
+                                        <br/><br/>And were done! Now once we start recording a replay and press the "left mouse button" it will add an event to the Clicks group.
+                                    </p>    
+
+                                     
+                                </div><!--//section-block-->
+                                <div id="adding-events-with-data" class="section-block">
+                                    <h3 class="block-title">Adding Events With Data</h3>
+                                    <p>Picking up from the <a href="#adding-events">previous section</a> we have now added an event to our replay, but what if we also want to store the position of the mouse when it was clicked ?<br/><br/>
+                                        We can do that using a "Replay Data object" which stores variable data in an event.<br/><br/>
+                                        First lets make one, to create one right click on the graph and search for "Create Replay Data Object".<br/><br/>
+                                        Add the node to the graph just before the "Add Event" node.<br/><br/>
+                                        Connect the return value of the "Replay Data Object" to the "Data Object" field on the "Add Event" node and leave some space in-between them.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events-with-data1.gif" alt="adding-events-with-data1">
+                                    
+
+                                    <p>
+                                        <br/><br/>Next we're going to need the position of the mouse on the viewport.Thankfully theres a built in node for that.<br /><br/>
+                                        Right click in the event graph and search for "Get Mouse Position Scaled".<br/><br/>
+                                        Drag of the "Player" input and search for "Get Player Controller".<br/><br/>
+                                        We now have the mouse position in the viewport.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events-with-data2.gif" alt="adding-events-with-data2">
+
+                                    <p>
+                                        <br/><br/>Since the mouse position is a float were going to store it as a float.<br/><br/>
+                                        Drag off the return value of the "Create Replay Data Object" node and search for "Add Float Data".<br/><br/>
+                                        Do this again so we can store the "X" and "Y" values seperately.<br/><br/>
+                                        Connect both nodes in-between the "Add Event" node and the "Create Replay Data Object" node
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events-with-data3.gif" alt="adding-events-with-data3">
+
+                                    <p>
+                                        <br/><br/>Name the first one "MousePosX" and the second one "MousePosY".<br/><br/>
+                                        Connect each viewport output to its respective node.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/adding-events-with-data4.gif" alt="adding-events-with-data4">
+
+
+                                    <p>
+                                        <br/><br/>And with that were done.<br/><br/>
+                                        Now everytime the event is added we also store the current positon of the mouse.
+                                    </p>
+
+
+
+                                </div><!--//section-block-->
+                                <div id="stopping-a-recording" class="section-block">
+                                    <h3 class="block-title">Stopping a Recording</h3>
+                                    <p>To Stop a recording all we'll need a is the "Stop Replay Recording" node.<br/>
+                                    </p>
+
+                                    <p><br/><br/>Right click on the graph and search for "Stop Recording Replay" and select the "Stop Recording Replay" node.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/stopping-a-recording1.gif" alt="stopping-a-recording1">
+
+                                    <p><br/><br/>Thats it, now if we connect stop recording to the actor's "EndPlay" event it will stop recording once the actor is destroyed.<br/>
+                                        (Replays save to disk so if you dont call this the replay will still save but may be corrupted or incomplete)
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/stopping-a-recording2.gif" alt="stopping-a-recording2">
+
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="playing-replays-section" class="doc-section">
+                                <h2 class="section-title">Playing Replays</h2>
+                                <div id="getting-recorded-replays" class="section-block">
+                                    <h3 class="block-title">Getting Recorded Replays</h3>
+                                    <p>We can play a replay directly (if you know the name on disk) but if you don't we can just get all the replays on disk
+                                        then play the one we want.<br/><br/>
+                                        To do this all we have to do is use a node called "Get Saved Replays".
+                                    </p>
+
+                                    <p><br/><br/>Right click on any event graph and search for "Get Saved Replays".<br/><br/>
+                                        This node can take an instant to run or a few seconds, it all depends on the speed of the drive its being run on.<br/><br/>
+                                        Drag off from the "Return Value" on the node and search for "Assign On Get Replays Complete".<br/><br/>
+                                        This will create an event which will be called once all the replays on disk have been loaded.
+                                    </p>
+                                    <img class="img-fluid" src="images/docs/getting-recorded-replays1.gif" alt="getting-recorded-replays1">
+
+                                    <p><br/><br/>Now we have each replay saved on disk represented as a "Replay Object".
+                                    </p>
+                                </div><!--//section-block-->
+                                <div id="playing-a-replay" class="section-block">
+                                    <h3 class="block-title">Playing a Replay</h3>
+                                    <p>Now lets play one of the replays we got from disk above.
+                                    </p>
+
+                                    <p>To play the first one we have make sure its valid using an "Is Valid Index" check.<br/><br/>
+                                        Drag of the array returned by the custom event and search for "Is Valid Index".<br/><br/>
+                                        Use the return value of the "Is Valid Index" node to create a branch.<br/><br/>
+                                        We're going to leave the index on 0 since we want to play the first replay.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/playing-a-replay1.gif" alt="playing-a-replay1">
+
+                                    <p><br/><br/>Now we drag of the array returned by the custom event and search for "Get (a Copy)"<br/><br/>
+                                        drag of the return value "Get (a Copy)" node and search for "Get Replay Info".<br/><br/>
+                                        This will give us some Information about the "Replay Object" so we know what to play.<br/><br/>
+                                        Right click on the "Replay Info" node and select "Split Struct Pin" so we can get the information we need.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/playing-a-replay2.gif" alt="playing-a-replay2">
+
+                                    <p><br/><br/>Finally we can play the replay<br/><br/>
+                                        Right click on an empty spot on the graph and search for "Play Recorded Replay".<br/><br/>
+                                        Connect the "Play Recorded Replay" node to the "True" Exec on the "branch".<br/><br/>
+                                        Then connect the "Actual Name" field on the "Replay Info" structure to the "Replay Name" field on the "Play Recorded Replay" node.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/playing-a-replay3.gif" alt="playing-a-replay3">
+
+                                    <p><br/><br/>With that, we're done.
+                                    </p>
+                                </div><!--//section-block-->
+                                <div id="getting-events" class="section-block">
+                                    <h3 class="block-title">Getting Events</h3>
+                                    <p>There are two ways to get the events of a replay.<br/><br/>
+                                        You can either get the events from the replay object, or use the "Request Active Replay Events" node.<br/>
+                                        We are going to go through the first method since we aren't watching a replay and have already <a href="#getting-recorded-replays">gotten the replays from disk</a>.
+                                    </p>
+
+                                    <p>To get the events of a saved replay we drag of from the "Replay Object"
+                                        returned by the "Get (a copy)" node and search for "RequestEvents" node.<br/><br/>
+                                        Connect it to the "True" Exec of the branch and set the group as <a href="#adding-events">MouseClicks</a>.<br/><br/>
+                                        "Request Events" is also dependent on the speed of your drive so we will drag
+                                        off the "Replay Object" again and search for "Assign On Request Events Complete".<br/><br/>
+                                        This will create an event that will be called once all the events of the MouseClicks
+                                         group have been fetched.
+                                    </p>
+
+                                    <img class="img-fluid" src="images/docs/getting-events1.gif" alt="getting-events1">
+
+                                    <p><br/><br/>With that we're done.The array returned by the custom event contains all the events of the replay.
+                                    </p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                    
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#installation-step1">Step One</a>
+                                        <a class="nav-link scrollto" href="#installation-step2">Step Two</a>
+                                        <a class="nav-link scrollto" href="#installation-step3">Step Three</a>
+                                    </nav><!--//nav-->
+	                                <a class="nav-link scrollto" href="#project-setup-section">Project Setup</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#project-step1">Step One</a>
+                                        <a class="nav-link scrollto" href="#project-step2">Step Two</a>
+                                        <a class="nav-link scrollto" href="#project-step3">Step Three</a>
+                                    </nav><!--//nav-->
+                                    <a class="nav-link scrollto" href="#recording-replays-section">Recording Replays</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#recording-a-replay">Recording a Replay</a>
+                                        <a class="nav-link scrollto" href="#adding-events">Adding Events</a>
+                                        <a class="nav-link scrollto" href="#adding-events-with-data">Adding Events With Data</a>
+                                        <a class="nav-link scrollto" href="#stopping-a-recording">Stopping a Recording</a>
+                                    </nav><!--//nav-->
+                                    <a class="nav-link scrollto" href="#playing-replays-section">Playing Replays</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#getting-recorded-replays">Getting Recorded Replays</a>
+                                        <a class="nav-link scrollto" href="#playing-a-replay">Playing a Replay</a>
+                                        <a class="nav-link scrollto" href="#getting-events">Getting Events</a>
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+</html> 
+
